@@ -1,2 +1,2 @@
-# python-courses
+# Cursos Python
 Repositorio dedicado al aprendizaje del lenguaje Python en distintos aspectos (básico, web, DS, AI)

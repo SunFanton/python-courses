@@ -1,0 +1,2 @@
+Este curso cuenta con material enteramente obtenido del repositorio del curso Análisis de Datos del Instituto Humai, junto con apuntes o anotaciones extras que yo pueda ir agregando.
+Por otro lado, se encontrarán también ejercicios propuestos por los docentes en cada clase, los cuales intentaré presentar una (posible) resolución.

@@ -11,10 +11,10 @@ try:
     print()
 
     print(item1.name)
-    print(item1.price)
+    print(item1.__price)
     print(item1.quantity)
     print(item2.name)
-    print(item2.price)
+    print(item2.__price)
     print(item2.quantity)
 
     print()
@@ -28,10 +28,10 @@ try:
     print()
 
     item1.apply_discount()
-    print(item1.price)
+    print(item1.__price)
     item2.pay_rate = 0.7
     item2.apply_discount()
-    print(item2.price)
+    print(item2.__price)
 
     print()
 

@@ -1,5 +1,6 @@
 import csv
 
+
 class Item:
     pay_rate = 0.8 # atributo de clase
     all = []
@@ -12,18 +13,41 @@ class Item:
         assert quantity >= 0, f"Quantity {quantity} is negative"
 
         # Asignacion
-        self.name = name
-        self.price = price
+        self.__name = name # atributo privado
+        self.__price = price
         self.quantity = quantity
 
         # Actions to execute
         Item.all.append(self)
 
+    @property
+    def price(self):
+        return self.__price
+
+    def apply_discount(self):
+        # primero se buscara si la instancia contiene el atributo pay_rate, si es asi, usara ese, sino usara el pay_rate de clase
+        self.__price = self.__price * self.pay_rate
+
+    def apply_increment(self, increment_value):
+        self.__price += self.price * increment_value
+
+    @property
+    #indica que el atributo en cuestion es de solo lectura (si no tuviera un setter)
+    #esto vendria ser como un getter
+    def name(self):
+        return self.__name
+
+    @name.setter # setter para el atributo privado name
+    def name(self, value):
+        if len(value) > 20:
+            raise Exception("Name too long!")
+        self.__name = value
+
     def __str__(self): # se usa para una representacion en cadena de texto del objeto comprensible para un ser humano
-        return f"Nombre: {self.name}, Precio: {self.price}, Cantidad: {self.quantity}"
+        return f"Nombre: {self.name}, Precio: {self.__price}, Cantidad: {self.quantity}"
 
     def __repr__(self): # se usa para una representacion en cadena de texto del objeto para logging, depuracion, etc
-        return f"Item('{self.name}', {self.price}, {self.quantity})"
+        return f"{self.__class__.__name__}('{self.name}', {self.__price}, {self.quantity})"
 
     # Metodo de clase que se accede a nivel de clase, no de instancia/objeto
     # el parametro que se pasa implicitamente es la clase en si, por eso el cls en lugar del self
@@ -65,9 +89,19 @@ class Item:
             return False
 
     def calculate_total_price(self):
-        return self.price * self.quantity
+        return self.__price * self.quantity
 
-    def apply_discount(self):
-        # primero se buscara si la instancia contiene el atributo pay_rate, si es asi, usara ese, sino usara el pay_rate de clase
-        self.price -= self.price * self.pay_rate
+    def __connect(self,  smtp_server): # metodo privado
+        pass
 
+    def __create_body(self): # metodo privado
+        pass
+
+    def __send(self): # metodo privado
+        pass
+
+    def send_email(self):
+        self.__connect("server")
+        self.__create_body()
+        self.__send()
+        print("Email was send!")

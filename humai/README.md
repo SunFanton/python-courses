@@ -13,7 +13,12 @@
 ## Maths for AI
 
 <div style="text-align: justify">Recopilación de conceptos matemáticos necesarios para iniciarse en Inteligencia Artificial y Data Sciense. Incluye apuntes con definiciones y ejemplos, y código Python con las librerías esenciales para aplicar estos conocimientos. Para ejecutar dicho código es necesario contar con Python instalado en el ordenador, junto con Jupyter Notebook y librerías como Numpy, Pandas o matplotlib.
-Los apuntes que se encuentran en las distintas carpetas corresponden a las 7 clases impartidas y compartidas gratuitamente a través de Youtube por el Instituto Humai. Se ha tomado como referencia mayoritariamente el contenido aportado por los docentes para la construcción del presente material, junto con recopilación de otras fuentes, citadas en los distintos notebooks.</div>
+Los apuntes que se encuentran en las distintas carpetas corresponden a las 7 clases impartidas y compartidas gratuitamente a través de Youtube y Github por el Instituto Humai. Se ha tomado como referencia mayoritariamente el contenido aportado por los docentes para la construcción del presente material, junto con recopilación de otras fuentes, citadas en los distintos notebooks.</div>
+
+## Machine Learning
+
+<div style="text-align: justify">Recopilación de conceptos relacionados a inteligencia artificial y aprendizaje de máquina.
+Los apuntes que se encuentran en las distintas carpetas corresponden a las clases impartidas y compartidas gratuitamente a través de Youtube y Github por el Instituto Humai.</div>
 
 ## Links Instituto Humai
 
@@ -24,6 +29,8 @@ Para más información: [Página Oficial Instituto Humai](https://humai.com.ar/)
 * Repositorio del curso de [Análisis de datos](https://github.com/institutohumai/cursos-python/tree/master/AnalisisDeDatos)
 
 * Repositorio del curso de [Matemáticas para IA](https://github.com/institutohumai/cursos-python/tree/master/MatematicasParaIA)
+
+* * Repositorio del curso de [Machine Learning](https://github.com/institutohumai/cursos-python/tree/master/MachineLearning)
 
 ## Installation
 
